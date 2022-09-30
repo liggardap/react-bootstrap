@@ -1,0 +1,8 @@
+.Header {
+  border: 1px solid red;
+  background-color: aquamarine;
+}
+
+.Header h1 {
+  text-align: center;
+}
