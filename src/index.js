@@ -10,6 +10,7 @@ import Layout from "./pages/Layout";
 import NoPage from "./pages/NoPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ListCar from "./pages/ListCar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<App />} />
+        <Route path="/listcar" element={<ListCar />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="*" element={<NoPage />} />
